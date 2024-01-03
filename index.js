@@ -54,7 +54,7 @@ function renderGame() {
     } else if (sum === 21) {
         message = "You've got Blackjack!"
         hasBlackJack = true
-        funEl.textContent = "Claim your reward by double clicking the header!"
+       funEl.classList.remove("reward")
     } else {
         message = "You're out of the game!"
         isAlive = false
